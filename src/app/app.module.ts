@@ -9,7 +9,6 @@ import {TodoDashboardComponent} from './todo-dashboard/todo-dashboard.component'
 import {TodoService} from './todo.service';
 import {NgRedux, NgReduxModule} from "ng2-redux";
 import {IAppState, rootReduder, INITIAL_STATE} from "./redux/store";
-import {fromJS} from "immutable";
 
 @NgModule({
     declarations: [

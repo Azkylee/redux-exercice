@@ -1,9 +1,8 @@
-import {Injectable, EventEmitter, OnInit, OnDestroy} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Todo} from "./todo";
 import {NgRedux} from "ng2-redux";
 import {IAppState} from "./redux/store";
 import {TODO_ADD, TODO_DELETE, TODO_DELETE_ALL, TODO_TOGGLE_COMPLETED} from "./redux/action";
-import {Observable} from "rxjs";
 
 // The two components we have in this app (TodoList and TodoDashboard) do not have a parent/child
 // relationship. Whilst we can enforce this relationship in this app, there are cases where two 

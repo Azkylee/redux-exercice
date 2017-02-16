@@ -1,9 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {TodoService} from '../todo.service';
 import {Todo} from "../todo";
-import {NgRedux, select} from "ng2-redux";
-import {IAppState} from "../redux/store";
-import {Observable} from "rxjs";
+import {select} from "ng2-redux";
 
 @Component({
     selector: 'app-todo-list',
@@ -17,7 +15,7 @@ export class TodoListComponent implements OnInit {
 
     }
 
-    constructor(private ngRedux: NgRedux<IAppState>, private service: TodoService) {
+    constructor(private service: TodoService) {
     }
 
     addTodo(input) {
